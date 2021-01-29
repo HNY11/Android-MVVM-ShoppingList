@@ -18,7 +18,7 @@ data class ShoppingItem(
     @ColumnInfo(name = "item_name")
     var name: String,
     @ColumnInfo(name = "item_amount")
-    var amount: String,
+    var amount: Int,
     @ColumnInfo(name = "item_unit")
     var unit: String
 ) {

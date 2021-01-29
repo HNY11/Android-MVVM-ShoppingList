@@ -25,6 +25,15 @@ android {
         }
     }
 
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
 }
 
 dependencies {
@@ -41,8 +50,8 @@ dependencies {
     // Room and Architectural Components
     implementation "androidx.room:room-runtime:$rootProject.roomVersion"
     implementation "androidx.legacy:legacy-support-v4:1.0.0"
-    implementation 'androidx.lifecycle:lifecycle-extensions:2.1.0'
-    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.1.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0'
     implementation "androidx.room:room-ktx:2.2.1"
     kapt "androidx.room:room-compiler:$roomVersion"
 
